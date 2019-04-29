@@ -115,7 +115,7 @@ Finally, the quantity `dai` can be transferred between users with `move`.
 
 The above discusses "users", but really the `cdpDatabase` does not have a
 notion of "addresses" or "users", and just assigns internal values to
-`bytes32` identifiers. The operator of the `cdpDatabase` is transferCollateralFromCDP to use any
+`bytes32` identifiers. The operator of the `cdpDatabase` is free to use any
 scheme they like to manage these identifiers. A simple scheme
 is to give an ethereum address control over any identifier that has the
 address as the last 20 bytes.

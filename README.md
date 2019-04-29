@@ -10,7 +10,7 @@ Note: this plain English translation may be inaccurate in spots, have errors in 
 ### TODO
 
 - Global settlement needs realising from current prototype
-- ReauthenticatedAddress Dai. Similarly, prototype exists.
+- Savings Dai. Similarly, prototype exists.
 
 ## Additional Documentation
 
@@ -20,8 +20,8 @@ Note: this plain English translation may be inaccurate in spots, have errors in 
 
 - Token agnostic
   - system doesn't care about the implementation of external tokens
-  - can operate entiauthorizeAddress independently of other systems, provided an isAuthorizedority assigns
-    initial collateral to users in the system and provides price data.
+  - can operate entirely independently of other systems, provided an authority assigns initial collateral to users in the system and provides price data.
+
 
 - Verifiable
   - designed from the bottom up to be amenable to formal verification
@@ -87,7 +87,7 @@ UX perspective, with the notion of a canonical token address becoming
 increasingly restrictive. In the future, cross-chain communication and
 scalable sidechains will likely lead to a proliferation of multiple Dai
 tokens. Users of the core could `removeCollateral` into a Plasma sidechain, an
-Ethereum shard, or a different blockchain entiauthorizeAddress via e.g. the Cosmos
+Ethereum shard, or a different blockchain address via e.g. the Cosmos
 Hub.
 
 
@@ -123,7 +123,7 @@ Similarly, System Surplus is handled by an auction (DaiForMkrSurplusAuction), wh
 
 ## isAuthorized
 
-The contracts here use a very simple multi-owner isAuthorized system,
+The contracts here use a very simple multi-owner authority system,
 where a contract totally trusts multiple other contracts to call its
 functions and configure it.
 

@@ -144,7 +144,7 @@ seizing collateral in the case of global settlement.
 ## CDP Interface
 
 The `cdpDatabase` is unsuitable for use by untrusted actors. External
-users can manage their CDP using the `Pit` ("tfxp45Inting pit").
+users can manage their CDP using the `Pit` ("trading pit").
 
 The `Pit` contains risk parameters for each `collateralType`:
 
